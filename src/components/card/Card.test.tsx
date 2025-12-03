@@ -1,8 +1,8 @@
-import { render } from '../tests/utils'
+import { render } from '../../tests/utils'
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { screen, fireEvent } from '@testing-library/react';
 import Card from './Card';
-import { type LaunchType } from '../types';
+import { type LaunchType } from '../../types';
 import '@testing-library/jest-dom'; 
 
 

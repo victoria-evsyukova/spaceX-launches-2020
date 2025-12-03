@@ -2,7 +2,7 @@ import { Container, Flex, Text, Image, Overlay, UnstyledButton } from "@mantine/
 import { type LaunchType } from "../../types"
 import style from './modal.module.css'
 import { useEffect } from "react"
-import { CloseIcon } from "../CloseIcon"
+import { CloseIcon } from "../../assets/icons/CloseIcon"
 
 type ModalType = {
     onClose: () => void
