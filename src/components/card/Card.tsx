@@ -7,7 +7,7 @@ import {
     Button
 
 } from '@mantine/core';
-import type { LaunchType } from '../types';
+import type { LaunchType } from '../../types';
 
 
 type Launch = {

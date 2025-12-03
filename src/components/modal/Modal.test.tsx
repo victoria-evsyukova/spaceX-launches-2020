@@ -1,4 +1,4 @@
-import { render } from '../tests/utils'
+import { render } from '../../tests/utils'
 import { test, expect, vi, beforeAll, afterEach } from 'vitest';
 import { screen, cleanup } from '@testing-library/react';
 import Modal from './Modal';

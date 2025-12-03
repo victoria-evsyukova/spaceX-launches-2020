@@ -3,11 +3,12 @@ import { Container, Title, Grid } from "@mantine/core";
 import { useEffect, useReducer } from "react";
 import axios from 'axios';
 import Card from '../card/Card'
-import { type LaunchType } from "../types";
-import { launchReducer, initialStateLaunch } from "../reducers/launchReducer";
+import { type LaunchType } from "../../types";
+import { launchReducer, initialStateLaunch } from "../../reducers/launchReducer";
 import { createPortal } from "react-dom";
 import Modal from "../modal/Modal";
-import { modalReducer, initialStateModal } from "../reducers/modalReducer";
+import { modalReducer, initialStateModal } from "../../reducers/modalReducer";
+import style from './Catalog.module.css'
 
 
 
@@ -65,7 +66,7 @@ export default function Catalog() {
             
             <Grid gutter={'lg'} justify="center">
                 {stateLaunch.launches.map((launch) => (
-                    <Grid.Col key={launch.id} span={4} style={{ maxWidth: '280px' }} >
+                    <Grid.Col key={launch.id} span={4} className={style['grid-col']} >
                         <Card 
                             launch={launch} 
                             onOpenModal={() => handleCardClick(launch)}/>

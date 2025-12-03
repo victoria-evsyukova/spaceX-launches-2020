@@ -1,6 +1,6 @@
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
-import Catalog from './pages/Catalog'
+import Catalog from './components/pages/Catalog'
 import './App.css'
 
 function App() {
